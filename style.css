@@ -1,5 +1,27 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto';
+    /* margin: 0;
+    padding: 0; */
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+header{
+    height: 121px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header img{
+    width: 128px;
+    height: 81px;
+}
+nav{
+    width: 80%;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li{
+    list-style-type: none;
+    text-transform: uppercase;
 }
