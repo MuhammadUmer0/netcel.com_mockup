@@ -7,6 +7,12 @@
     --navlink: #6c6c6c;
     --partnersBg: #F3F3F3;
     --partnersHeading: #5c5c5c;
+    --mainGradient: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.4) 40%, rgba(0,0,0,0.0) 80%);
+    --resultsHeading: #333333;
+    --pink: #ED1556;
+    --blue: #385D77;
+    --green: #A9DBD3;
+    --resultsColP: #333333;
 }
 header{
     height: 121px;
@@ -46,12 +52,11 @@ nav a:hover{
 section{
     height: 600px;
     width: 100%;
-    background-color: aqua;
     display: flex;
     justify-content: flex-start;
     align-items:flex-start;
     position: relative;
-    background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.4) 40%, rgba(0,0,0,0.0) 80%);
+    background-image: var(--mainGradient),url(images/netcel-hero.jpg);
 }
 .content{
     height: 200px;
@@ -107,18 +112,18 @@ section{
 
 }
 .blue{
-    background-color: #385D77;
+    background-color: var(--blue);
 }
 .pink{
-    background-color: #ED1556;
+    background-color: var(--pink);
 }
 .green{
-    background-color: #A9DBD3;
+    background-color: var(--green);
 }
 .partners{
     margin: 0;
     padding: 0;
-    height: 618px;
+    height: 700px;
     background-color: var(--partnersBg);
     margin-top: 13em;
     display: flex;
@@ -157,4 +162,83 @@ section{
     font-weight: 300;
     margin-top: 4em;
     color: var(--partnersHeading);
+}
+.results{
+        height: 662px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}
+.results h1{
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    color: var(--partnersHeading);
+}
+.resultsRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    height: 445px;
+    margin-top: 2em;
+}
+.resultsCol{
+    height: 445px;
+    width: 380px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.resultsCol img{
+    height: 230px;
+    width: 406px;
+
+}
+.resultsCol h6{
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 400;
+}
+h6 a{
+    color: var(--resultsHeading);
+    text-decoration: none;
+}
+h6 a:hover{
+    color: var(--pink);
+    text-decoration: none;
+}
+.resultsCol p{
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--resultsColP);
+}
+.resultsCol button{
+    height: 38px;
+    width: 141px;
+    background-color: var(--resultsHeading);
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 38px;
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+    transition: 0.25s;
+    outline: none;
+    border: none;
+}
+.resultsCol button:hover{
+    height: 38px;
+    width: 141px;
+    background-color: var(--pink);
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 38px;
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
 }
