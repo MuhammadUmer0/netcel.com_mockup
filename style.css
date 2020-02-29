@@ -3,18 +3,27 @@
     padding: 0; */
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
+:root{
+    --navlink: #6c6c6c;
+}
 header{
     height: 121px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* position: fixed;
+    background-color: white; */
+}
+.logo{
+    width: 40%;
 }
 header img{
     width: 128px;
-    height: 81px;
+    height: 100px;
 }
 nav{
-    width: 80%;
+    width: 50%;
 }
 ul{
     display: flex;
@@ -24,4 +33,40 @@ ul{
 li{
     list-style-type: none;
     text-transform: uppercase;
+}
+nav a{
+    text-decoration: none;
+    color: var(--navlink);
+}
+nav a:hover{
+    text-decoration-color: var(--navlink);
+}
+main{
+    height: 680px;
+    width: 100%;
+    background-image: url(images/netcel-hero.jpg);
+    background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.4) 40%, rgba(0,0,0,0.0) 80%);
+    display: flex;
+    justify-content: flex-start;
+}
+main .content{
+    height: 200px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+    margin-top: 2em;
+    margin-left: 2em;
+}
+.content h1{
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 66px;
+}
+.content h3{
+    font-size: 30px;
+    line-height: 33px;
+    font-weight: 300;
 }
