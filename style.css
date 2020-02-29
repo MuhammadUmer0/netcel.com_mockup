@@ -5,6 +5,8 @@
 }
 :root{
     --navlink: #6c6c6c;
+    --partnersBg: #F3F3F3;
+    --partnersHeading: #5c5c5c;
 }
 header{
     height: 121px;
@@ -112,4 +114,47 @@ section{
 }
 .green{
     background-color: #A9DBD3;
+}
+.partners{
+    margin: 0;
+    padding: 0;
+    height: 618px;
+    background-color: var(--partnersBg);
+    margin-top: 13em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.partners h1{
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    color: var(--partnersHeading);
+}
+.partners .content{
+    height: 434px;
+    width: 75%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content .btnLogoRow{
+    width: 85%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btnLogoRow img{
+    height: 94px;
+}
+.content p{
+    width: 85%;
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 4em;
+    color: var(--partnersHeading);
 }
