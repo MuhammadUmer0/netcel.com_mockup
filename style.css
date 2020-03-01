@@ -15,6 +15,7 @@
     --resultsColP: #333333;
     --leftFooterBG: #4C4C4C;
     --rightFooterBG: #696969;
+    --copyright: #cccccc;
 }
 header{
     height: 121px;
@@ -308,17 +309,87 @@ footer{
     width: 100%;
 }
 .leftFooter{
-    width: 70%;
+    width: 996px;
     height: 0;
     border-bottom: 223px solid var(--leftFooterBG);
     border-right: 60px solid transparent;
     position: absolute;
+    display: flex;
 }
 .rightFooter{
-    width: 24.7%;
+    width: 350px;
     height: 0;
     border-top: 223px solid var(--rightFooterBG);
     border-left: 60px solid transparent; 
     position: relative;
-    margin-left: 59em;
+    margin-left: 57.7em;
+}
+.leftFooter .aboutLeft{
+    height: 87px;
+    width: 190px;
+    margin: 2em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+.aboutLeft p{
+    font-size: 14px;
+    line-height: 10px;
+    font-weight: 300;
+}
+.aboutLeft a{
+    text-decoration: none;
+    color: white;
+}
+.aboutLeft a:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+    color: white;
+}
+.aboutRight{
+    height: 150px;
+    width: 250px;
+    margin: 1.6em 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: white;
+    position: absolute;
+    bottom: 0;
+}
+.aboutRight p{
+    font-size: 11px;
+    line-height: 10px;
+    font-weight: 300;
+}
+.aboutRight a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.aboutRight a:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+    color: white;
+}
+.social{
+    height: 27px;
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social img{
+    height: 24px;
+    width: 24px;
+}
+.social a:hover{
+    opacity: 0.5;
+}
+.copyright{
+    font-size: 11px;
+    margin-top: 2em;
+    color: var(--copyright);
 }
