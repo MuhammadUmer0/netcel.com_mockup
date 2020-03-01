@@ -13,6 +13,8 @@
     --blue: #385D77;
     --green: #A9DBD3;
     --resultsColP: #333333;
+    --leftFooterBG: #4C4C4C;
+    --rightFooterBG: #696969;
 }
 header{
     height: 121px;
@@ -300,4 +302,22 @@ h6 a:hover{
 .content a:hover{
     text-decoration: underline;
     text-decoration-color: white;
+}
+footer{
+    height: 223px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.leftFooter{
+    width: 70%;
+    height: 0;
+    border-bottom: 223px solid var(--leftFooterBG);
+    border-right: 60px solid transparent;
+}
+.rightFooter{
+    width: 30%;
+    height: 0;
+    border-top: 223px solid var(--rightFooterBG);
+    border-left: 60px solid transparent; 
 }
