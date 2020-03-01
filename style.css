@@ -265,3 +265,14 @@ h6 a:hover{
     justify-content: space-between;
     margin-top: 1em;
 }
+.getInTouch{
+    height: 197px;
+    width: 100%;
+    background-color: var(--pink);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.getInTouch .content{
+    
+}
