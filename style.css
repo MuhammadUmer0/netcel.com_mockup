@@ -270,9 +270,34 @@ h6 a:hover{
     width: 100%;
     background-color: var(--pink);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    
 }
 .getInTouch .content{
-    
+    height: 150px;
+    width: 640px;
+    color: white;
+    margin-bottom: 3.5em;
+}
+.content h1{
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: lighter;
+}
+.getInTouch .text{
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 300;
+}
+.bold{
+    font-weight: 700;
+}
+.getInTouch a{
+    text-decoration: none;
+    color: white;
+}
+.content a:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
 }
