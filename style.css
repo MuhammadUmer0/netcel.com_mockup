@@ -306,18 +306,19 @@ h6 a:hover{
 footer{
     height: 223px;
     width: 100%;
-    display: flex;
-    justify-content: center;
 }
 .leftFooter{
     width: 70%;
     height: 0;
     border-bottom: 223px solid var(--leftFooterBG);
     border-right: 60px solid transparent;
+    position: absolute;
 }
 .rightFooter{
-    width: 30%;
+    width: 24.7%;
     height: 0;
     border-top: 223px solid var(--rightFooterBG);
     border-left: 60px solid transparent; 
+    position: relative;
+    margin-left: 59em;
 }
