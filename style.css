@@ -307,7 +307,7 @@ footer{
     height: 223px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .leftFooter{
     width: 70%;
